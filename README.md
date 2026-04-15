@@ -107,15 +107,6 @@ gr.ChatInterface(
 ```
 ├── notebook/
 │   ├── toolcalling.ipynb          # Main notebook
-│   ├── attn.ipynb                 # Attention mechanisms
-│   ├── multiheadAttn.ipynb        # Multi-head attention
-│   ├── casualAttn.ipynb           # Causal attention
-│   ├── bpe.ipynb                  # Byte pair encoding
-│   ├── dataset.ipynb              # Dataset processing
-│   ├── hgface.ipynb               # HuggingFace integration
-│   └── LLMTokenizer.ipynb         # Tokenizer
-├── data/
-│   └── gradientdescent.txt        # Reference data
 ├── .env                            # API keys (not in repo)
 ├── .gitignore                      # Git ignore rules
 └── README.md                       # This file
@@ -156,14 +147,6 @@ get_weather_infor("HaNoi")
 | Gemini 2.5 Flash Lite | Google | 1 | Thấp | Rẻ |
 | Groq GPT-OSS 120B | Groq | 5 | Rất Thấp | Miễn phí |
 
-## 🐛 Troubleshooting
-
-### Lỗi `.env` không được tải
-**Giải pháp:**
-```python
-from dotenv import load_dotenv
-load_dotenv(r'd:\AI\Deeplearning\BuildLLMs\.env', override=True)
-```
 
 ### API Key không hợp lệ
 - Kiểm tra file `.env` có đúng format không
@@ -188,9 +171,6 @@ requests>=2.31.0
 
 MIT License - Tự do sử dụng cho mục đích học tập
 
-## 👨‍💻 Author
-
-**Thang Pham** - [@Thangp18](https://github.com/Thangp18)
 
 ## 🤝 Contribute
 
